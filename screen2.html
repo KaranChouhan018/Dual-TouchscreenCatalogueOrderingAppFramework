@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Screen 2 - Duo Touchscreen Catalogue Ordering App</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- vendor js libraies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+        <!-- for scaling app on smaller screens -->
+        <script src="js/scale_site.js" defer></script>
+        <!-- load in product details -->
+        <script src="js/products.js" defer></script>
+        <!-- shared js -->
+        <script src="js/main.js" defer></script>
+        <!-- screen 2 js -->
+        <script src="js/main2.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <!-- main app container -->
+        <main class="right">
+
+            <!-- highlighted product screen -->
+            <section id="product-info">
+
+                <!-- highlight title -->
+                <div id="hl-title"></div>
+
+                <!-- highlight price -->
+                <div id="hl-price"></div>
+
+                <!-- highlight images -->
+                <div class="highlight-images">
+                    <img id="hl-img" src="" />
+                </div>
+
+                <!-- highlight overview title -->
+                <div id="hl-overview-title" class="other"></div>
+
+                <!-- highlight overview -->
+                <div id="hl-overview" class="other"></div>
+
+                <!-- choose colour buttons -->
+                <div id="choose-colour" class="selection-holder other">
+                    <div class="selection-label">AVAILABLE COLOURS</div>
+                    <div id="colour-btns" class="selection"></div>
+                </div>
+
+                <!-- colour label -->
+                 <div id="selected-colour-name" class="selection-holder other">Select colour above </div>
+
+                <!-- choose size buttons -->
+                <div id="choose-size" class="selection-holder other">
+                    <div class="selection-label">AVAILABLE SIZES</div>
+                    <div id="size-btns" class="selection"></div>
+                </div>
+
+                <!-- highlight instructions -->
+                <div class="screen-instructions">CHOOSE COLOUR & SIZE</div>
+
+                <!-- add 2 cart button -->
+                <img id="add2cart" src="assets/btn/add_to_cart.png" style="right:20px;bottom:45px;cursor:pointer;" />
+
+            </section>
+
+            <!-- cart screen -->
+            <section id="cart">
+
+                <!-- cart title -->
+                <div class="cart-title">CHECKOUT</div>
+
+                <!-- cart items container -->
+                <div class="cart-items-holder">
+
+                    <!-- cart items header -->
+                    <div class="cart-grid cart-items-header">
+                        <span>Product</span>
+                        <span>Name</span>
+                        <span>Colour</span>
+                        <span>Size</span>
+                        <span>Price</span>
+                        <span>Remove</span>
+                    </div>
+
+                    <!-- cart items container -->
+                    <div id="cart-items">Cart is empty</div>
+
+                    <!-- cart subtotal -->
+                    <div class="cart-grid-total cart-items-footer">
+                        <span></span>
+                        <span class="total-label">Subtotal</span>
+                        <span id="cart-subtotal" class="total-label total-label-cost">$100</span>
+                    </div>
+
+                    <!-- cart taxes -->
+                    <div class="cart-grid-total">
+                        <span></span>
+                        <span class="total-label">Taxes</span>
+                        <span id="cart-taxes" class="total-label total-label-cost">$10</span>
+                    </div>
+
+                    <!-- cart total -->
+                    <div class="cart-grid-total">
+                        <span></span>
+                        <span class="total-label">Total</span>
+                        <span id="cart-total" class="total-label total-label-cost">$110</span>
+                    </div>
+
+                </div>
+
+                <!-- close cart button -->
+                <img id="return" src="assets/btn/return.png" style="left:65px;bottom:45px;cursor:pointer;" />
+
+                <!-- print receipt button -->
+                <img id="print-receipt" src="assets/btn/print_receipt.png" style="right:65px;bottom:45px;cursor:pointer;" />
+
+                <!-- hidden... for use to print receipt -->
+                <iframe id="receipt" style="display:none;"></iframe>
+
+            </section>
+
+            <!-- checkout steps screen -->
+            <section id="checkout-steps">
+                
+                    <video autoplay loop muted>
+                        <source src="assets/video/checkoutsteps_r.mp4" />
+                    </video>
+                
+                
+            </section>
+            
+            <!-- idle timer warning popup -->
+            <section id="warning">
+                <div id="content">
+                    <h2>Inactivity Warning</h2>
+                    <p>Please interact with the app<br>or it will be reset in:</p>
+                    <h3><span id="seconds">10</span> seconds</h3>
+                </div>
+            </section>
+
+            <!-- screen saver screen -->
+            <section class="screen-saver">
+                <video autoplay loop muted>
+                    <source src="assets/video/screensaver2_1.mp4" />
+                </video>
+            </section>
+
+        </main>
+
+    </body>
+</html>

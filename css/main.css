@@ -1,0 +1,418 @@
+/* custom/local fonts */
+@font-face {
+    font-family: 'BrandFontBold';
+    src: url('fonts/segoeuithibd.ttf') format('truetype-variations');
+
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrandFontReg';
+    src: url('fonts/segoeuithis.ttf') format('truetype-variations');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    /* do not edit */
+    margin: 0;
+    background-color: #000000;
+    /* set font for product body copy and default font colour */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* do not edit */
+main, section {
+    position: absolute;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+}
+
+main {
+    /* do not edit */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* set background colour and image for main screens */
+    /* if using 2 different backgrounds create class for other screen */
+    background-color: #4b7492;
+    background-image: url(../assets/bgleft.jpg);
+}
+
+/* background screen 2*/
+.right{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../assets/bgright.jpg);
+
+}
+
+/* do not edit */
+#catalogue > img,
+#product-info > img,
+#product-info > div,
+#cart > img,
+#cart > div {
+    position: absolute;
+}
+
+
+#tags > img{
+    position: absolute;
+}
+#tags{
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform-origin: 100% 50%; /* Set the pivot point for rotation */
+    opacity: 0; /* Initially hidden */
+    transform: translate(-50%, -50%); /* Ensure the element is visually centered */
+}
+#link > img{
+    position: absolute;
+}
+
+/* brand logo position and size */
+.brand-logo {
+    top: 46px;
+    left: 819px;
+    width: 214px;
+}
+
+/* do not edit */
+.product {
+    cursor: pointer;
+}
+.product5{
+    cursor: pointer;
+}
+
+/* product title position and font settings */
+#hl-title {
+    left: 65px;
+    right: 65px;
+    top: 45px;
+    font-family: 'BrandFontBold';
+    font-size: 110px;
+}
+
+/* product price position and font settings */
+#hl-price {
+    left: 65px;
+    right: 65px;
+    top: 170px;
+    font-family: 'BrandFontReg';
+    font-weight: 900;
+    font-size: 50px;
+    color: #002b49;
+}
+
+/* product image position */
+.highlight-images {
+    left: 65px;
+    right: 65px;
+    top: 260px;
+    /* do not edit */
+    height: 970px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* product overview title position and font settings */
+#hl-overview-title {
+    left: 65px;
+    right: 65px;
+    top: 1250px;
+    font-family: 'BrandFontReg';
+    font-size: 50px;
+}
+
+/* product overview position and font settings */
+#hl-overview {
+    left: 65px;
+    right: 65px;
+    top: 1330px;
+    font-size: 35px;
+}
+
+/* colour and size selection container */
+.selection-holder {
+    left: 65px;
+    right: 65px;
+    font-size: 20px;
+    /* do not edit */
+    display: flex;
+}
+
+/* choose colour container position */
+#choose-colour {
+    top: 1400px;
+    left: 450px;
+}
+
+/* selected colour text position */
+#selected-colour-name {
+    top: 1500px;
+    left: 800px;
+    position: absolute;
+}
+
+/* choose size container position */
+#choose-size {
+    top: 1585px;
+    left: 400px;
+}
+
+/* choose size label positioning */
+#choose-size .selection-label {
+    padding-left: 50px;
+    font-size: 40px;
+    color: #008fbe;
+    font-weight: bold;
+}
+
+/* colour and size label poistioning and font settings */
+.selection-label {
+    display: inline-block;
+    font-family: 'BrandFontReg';
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: #008fbe;
+    font-weight: bold;
+}
+
+/* do not edit */
+.selection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* colour and size buttons styles */
+.selection > div {
+    width: 70px;
+    height: 70px;
+    border: solid 3px #fff;
+    /* do not edit */
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+/* size button label styles */
+.size-btn {
+    background-color: #008fbe;
+    font-family: 'BrandFontBold';
+    font-size: 30px;
+    padding-top: 5px;
+    /* do not edit */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* colour and size selected button styles */
+.selected {
+    border-radius: 0 !important;
+}
+
+/* screen instructions positioning and font settings */
+.screen-instructions {
+    left: 65px;
+    top: 1830px;
+    font-family: 'BrandFontReg';
+    font-size: 30px;
+    color: #008fbe;
+    /* do not edit */
+    position: absolute;
+}
+
+/* cart background image */
+#cart {
+    background-image: url(../assets/bgleft.jpg);
+    /* do not edit */
+    display: none;
+}
+
+.cart-title {
+    left: 65px;
+    right: 65px;
+    top: 65px;
+    font-family: 'BrandFontBold';
+    font-size: 110px;
+
+}
+
+/* cart items scrollable section */
+#cart-items {
+    overflow-y: scroll;
+    height: 800px;
+    scrollbar-color: #002b49;
+}
+
+/* cart items container... position and font settings */
+.cart-items-holder {
+    left: 65px;
+    right: 65px;
+    top: 300px;
+    font-size: 35px;
+    height: 1000px;
+    color: #002b49;
+    font-weight: 700;
+}
+
+/* cart rows */
+.cart-grid {
+    /* keep this */
+    display: grid;
+    
+    /* column width... image, title, colour, size, price, remove */
+    grid-template-columns: 130px auto 190px 80px 90px 75px;
+    /* space below */
+    margin-bottom: 20px;
+    margin-right:10px ;
+}
+
+/* distance bewteen columns */
+.cart-grid > span {
+    padding-right: 20px;
+}
+
+/* styles for remove column */
+.cart-grid > span:last-child {
+    padding-right: 0;
+    text-align: center;
+    transform: translateY(10px);
+}
+
+/* reset transform on rermove column header */
+.cart-items-header > span:last-child {
+    transform: translateY(0);
+}
+
+/* column width for subtotal, taxes and total */
+.cart-grid-total {
+    /* keep this */
+    display: grid;
+    /* column width... label, value */
+    grid-template-columns: auto 90px 125px;
+    margin-bottom: 20px;
+}
+
+/* font settings for column header and total */
+.cart-items-header,
+.total-label {
+    font-family: 'BrandFontReg';
+    font-size: 30px;
+}
+
+/* do not edit */
+.total-label-cost {
+    text-align: right !important;
+}
+
+/* keyline under header */
+.cart-items-header {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 20px;
+}
+
+/* keyline above footer */
+.cart-items-footer {
+    padding-top: 20px;
+    border-top: solid 1px #fff;
+    margin-top: 20px;
+}
+
+/* remove item button */
+.remove-item > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #002b49;
+    font-weight: bold;
+    margin: 0 auto;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* colour swatch */
+.swatch {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+}
+
+/* checkout steps for both screens */
+#checkout-steps {
+    /* do not edit */
+    display: none;
+    /* set background colour and image for main screens */
+    /* if using 2 different backgrounds create class for other screen */
+    background-clip: url(../assets/video/checkoutsteps_r.mp4);
+}
+
+#checkout-steps h1 {
+    margin: 100px 0;
+    font-family: 'BrandFontBold';
+    font-size: 280px;
+    text-align: center;
+}
+#checkout-steps p {
+    margin: 100px;
+    font-family: 'BrandFontReg';
+    font-size: 180px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* do not edit */
+#warning {
+    display: none;
+}
+
+/* idle timer warning popup */
+#content {
+    /* do not edit */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* styles for popup */
+    font-size: 25px;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffc844;
+    color: #002b49;
+    border-radius: 20px;
+}
+
+/* title for warning popup */
+#content h2 {
+    font-family: 'BrandFontBold';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* other text for popup */
+#content p {
+    margin-bottom: 20px;
+}

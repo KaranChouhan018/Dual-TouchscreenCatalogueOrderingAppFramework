@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Screen 1 - Duo Touchscreen Catalogue Ordering App</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- vendor js libraies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+        <!-- for scaling app on smaller screens -->
+        <script src="js/scale_site.js" defer></script>
+        <!-- shared js -->
+        <script src="js/main.js" defer></script>
+        <!-- screen 1 js -->
+        <script src="js/main1.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <!-- main app container -->
+        <main class="left">
+            
+            <!-- catalogue screen -->
+            <section id="catalogue">
+
+                <!-- collecton title-->
+                <img class="title" src="assets/collection/collection.png" style="left:46px;top:37px;" />
+
+                <!-- brand logo -->
+                <img class="brand-logo" src="assets/brand_logo.svg" />
+
+                
+                <!-- products -->
+                <img id="product1" class="product" src="assets/collection/axe.png" style="left:850px;top:190px;" />
+                <img id="product2" class="product" src="assets/collection/boots.png" style="left:600px;top:310px;" />
+                <img id="product3" class="product" src="assets/collection/compass.png" style="left:430px;top:510px;" />
+                <img id="product4" class="product" src="assets/collection/pocketknife.png" style="left:350px;top:780px;" />
+                <img id="product5" class="product" src="assets/collection/pants.png" style="left:690px;top:680px;"/>
+                <img id="product6" class="product" src="assets/collection/gloves.png" style="left:350px;top:1010px;" />
+                <img id="product7" class="product" src="assets/collection/beanie.png" style="left:430px;top:1245px;" />
+                <img id="product8" class="product" src="assets/collection/headlamp.png" style="left:650px;top:1490px;" />
+                <img id="product9" class="product" src="assets/collection/rope.png" style="left:870px;top:1590px;" />
+                
+                <!-- tags-->
+                <img   src="assets/collection/blue circle.png" style="left:500px;top:400px; z-index: -1;" />
+                
+                <section id="tags">
+                <img id="product1" class="product" src="assets/collection/axetag.png" style="left:650px;top:250px;" />
+                <img id="product2" class="product" src="assets/collection/bootstag.png" style="left:350px;top:380px;" />
+                <img id="product3" class="product" src="assets/collection/compasstag.png" style="left:230px;top:550px;" />
+                <img id="product4" class="product" src="assets/collection/pocketknifetag.png" style="left:150px;top:780px;" />
+                <a href="./screen2.html" id="link"><img id="product5" class="product5" src="assets/collection/pantstag.png" style="left:350px;top:930px;" /></a>
+                <img id="product6" class="product" src="assets/collection/glovestag.png" style="left:150px;top:1080px;" />
+                <img id="product7" class="product" src="assets/collection/beanietag.png" style="left:220px;top:1300px;" />
+                <img id="product8" class="product" src="assets/collection/headlamptag.png" style="left:380px;top:1500px;" />
+                <img id="product9" class="product" src="assets/collection/ropetag.png" style="left:550px;top:1670px;" />
+                </section>
+                <!-- other elements -->
+                
+
+                <!-- instructions -->
+                <div class="screen-instructions">TAP ON A PRODUCT ABOVE TO SEE MORE DETAILS</div>
+
+                <!-- view cart button -->
+                <img id="view-cart" src="assets/btn/view_cart.png" style="right:65px;bottom:45px;cursor:pointer;" />
+
+            </section>
+
+            <!-- checkout steps screen -->
+            <section id="checkout-steps">
+                <h1>CHECKOUT</h1>
+                <p>- 1 -<br>Take receipt to cashier</p>
+                <p>- 2 -<br>Pay for your items</p>
+            </section>
+            
+            <!-- idle timer warning popup -->
+            <section id="warning">
+                <div id="content">
+                    <h2>Inactivity Warning</h2>
+                    <p>Please interact with the app<br>or it will be reset in:</p>
+                    <h3><span id="seconds">10</span> seconds</h3>
+                </div>
+            </section>
+
+            <!-- screen saver screen -->
+            <section class="screen-saver">
+                <video autoplay loop muted>
+                    <source src="assets/video/screensaver1_1.mp4" />
+                </video>
+            </section>
+
+        </main>
+
+    </body>
+</html>
